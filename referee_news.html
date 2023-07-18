@@ -1,0 +1,133 @@
+<html>
+<head>
+    <link rel="stylesheet" href="hyperlink.css">
+    <link rel="stylesheet" href="referee_news.css">
+</head>
+
+<body>
+<!--Navigation Bar-->
+<div class="icons">
+    <a href="https://www.youtube.com/"><img src="Documents/icons/youTube.png" width="40px" height="40px"></a>
+    <a href="useful_links.html"><img src="Documents/icons/link.png" width="35px" height="30px"></a>
+</div>
+
+
+<div class="grid_container" id="nav_grid">
+    <!--Icon-->
+
+    <!--Home-->
+    <div class="home">
+        <a href="home.html"><img src="Documents/icons/logo.png" width="120px" height="40px"></a>
+    </div>
+
+    <!--Rule-->
+    <div class="rules">
+        <div class="dropdown">
+            <button class="dropdown_button">Rules</button>
+            <div class="dropdown_content">
+                <h2>Game Genre</h2>
+                <h2>Violations</h2>
+                <h2>Fouls</h2>
+                <h2>Duty and Power</h2>
+            </div>
+        </div>
+    </div>
+
+    <!--Mechanics-->
+    <div class="mechanics">
+        <div class="dropdown">
+            <button class="dropdown_button">Mechanics</button>
+            <div class="dropdown_content">
+                <h2>2PO</h2>
+                <h2>Signals</h2>
+            </div>
+        </div>
+    </div>
+
+    <!--Special Aspects-->
+    <div class="special_aspects">
+        <div class="dropdown">
+            <button class="dropdown_button">Special Aspects</button>
+            <div class="dropdown_content">
+                <a href="game_management.html">Game Management</a>
+                <a href="referee_professionalism.html">Referee Professionalism</a>
+                <a href="rule_changes_yearly.html">Rule changes yearly</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Referee News-->
+    <div class="referee_news">
+        <a href="referee_news.html">Referee News</a>
+    </div>
+
+    <!--Referee Interviews-->
+    <div class="referee_interviews">
+        <a href="refereeinterviews.html">Referee Interviews</a>
+    </div>
+
+    <!--Contact Us-->
+    <div class="contact_us">
+        <div class="dropdown">
+            <button class="dropdown_button">Contact Us</button>
+            <div class="dropdown_content">
+                <a href="about_us.html">About Us</a>
+                <a href="feedbacksystem.html">Feedback System</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Search Bar-->
+    <div class="search_bar">
+        <button onclick = "clicked_dropdown()" class="dropdown_button">
+            <img src="Documents/icons/searchbar.png" width="40px" height="30px">
+            <!--The output after the user clicked the magnifying glass-->
+            <div class="dropdown_content" id="searchbar">
+
+            </div>
+        </button>
+    </div>
+</div>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("nav_grid");
+        if (x.className === "grid_container") {
+            x.className += " responsive" ;
+        } else{
+            x.className = "grid_container"
+        }
+    }
+
+    //Code for the clicked dropdown
+    function clicked_dropdown() {
+        document.getElementById("searchbar").classList.toggle("show;")
+    }
+
+    window.onclick = function(event) {
+        if (!event.target.matches(".dropdown_button")) {
+            var dropdowns = document.getElementsByClassName("dropdown_contents")
+            var i
+            for (i=0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains("show")){
+                    openDropdown.classList.remove("show");
+                }
+            }
+        }
+    }
+</script>
+
+<!--News section, in seperate blocks-->
+<!--Title-->
+<h1 style="text-align:center">Referee News</h2>
+
+<div class="news_flex">
+    <div class="left_news">
+        <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            XXXXXXXXXXXXXXXXX <a href="news1.html">...</a></p>
+    </div>
+</div>
+
+</body>
+</html>

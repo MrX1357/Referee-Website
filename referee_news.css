@@ -1,0 +1,29 @@
+.news_flex{
+    padding-top:20px;
+    display:flex;
+    flex-direction: row;
+    padding-left:50px;
+}
+
+.left_news{
+    border:solid black;
+    border-radius:none;
+    width:15cm;
+    border-spacing:5px;
+}
+
+.left_news p .left_news a{
+    text-align:left;
+    font:16px;
+    border-width:30%;
+}
+
+/*The link the user can click to direct towards the complete page*/
+.left_news a{
+    color:white;
+    cursor:pointer;
+}
+
+.left_news a:hover{
+    color:#f6a456;
+}

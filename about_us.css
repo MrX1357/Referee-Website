@@ -1,0 +1,28 @@
+.about_us_flex{
+    display:flex;
+    justify-content:space-between;
+    padding-left:140px;
+    padding-right:140px;
+    flex-direction:row;
+    padding-bottom:25px;
+}
+
+.about_us_flex h2{
+    font-style:italic;
+}
+
+.image .description{
+    width:50%;
+    height:100vh;
+    font-size:16px;
+    text-align:center;
+}
+
+.image{
+    width:15cm;
+}
+
+.description{
+    line-height:26px;
+    width:15cm;
+}

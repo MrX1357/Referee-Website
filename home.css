@@ -1,0 +1,254 @@
+/*Applied to all pages*/
+h1{
+    size:24px;
+    font-weight:bold;
+}
+
+h2{
+    size:20px;
+    font-weight:normal;
+}
+
+p{
+    size:16px;
+}
+
+h1 h2 p{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/*Home display*/
+.home_grid{
+    display:grid;
+    padding-top:32px;
+}
+
+.home_grid a{
+    color:black;
+}
+
+/*News update*/
+.news_sections{
+    padding-top:16px;
+    grid-column:1/3;
+    grid-row:1/2;
+    /*distance from the navigation bar*/
+    padding-right:100px;
+    z-index:1;
+}
+
+.news_sections img{
+    padding-top:16px;
+    grid-column:1/3;
+    grid-row:1/2;
+    background-repeat:no-repeat;
+    background-image:url(Documents/Home/home_news.jfif);
+    background-size:150% 150%;
+    opacity:0.15;
+    z-index:0;
+}
+
+.news_sections a{
+    size:16px;
+    text-align:center;
+    padding-left:20px;
+    text-decoration:none;
+}
+
+    /*Slideshow*/
+    .mySlides{
+        display:none;
+    }
+
+    .slideshow-container{
+        position:relative;
+        margin:auto;
+    }
+
+    /*The dots for user to switch the slide*/
+    .dot{
+        cursor:pointer;
+        height:15px;
+        width:15px;
+        margin:0 10px;
+        background-color:black;
+        border-radius:100%;
+        display:inline-block;
+    }
+
+    .active, .dot:hover{
+        background-color:#f6a456;
+    }
+
+        /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+/*Video about us*/
+.video_sections{
+    grid-column:3/5;
+    grid-row:1/2;
+    padding-left:10px;
+    height:auto;
+    position:relative;
+}
+
+/*Nearest association*/
+.finding_sections{
+    grid-column:1/5;
+    grid-row:2/3;
+    margin-top:0px;
+    padding-top:0px;
+    padding-left:10px;
+    padding-right:10px;
+    z-index:1;
+}
+
+.finding_sections_img{
+    grid-column:1/5;
+    grid-row:2/3;
+    background-image:url(Documents/Home/nearestasso.jpg);
+    opacity:0.25;
+    z-index:0;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.finding_sections h2{
+    text-align:center;
+    position:relative;
+    z-index:1;
+    padding-top:20px;
+    opacity:2;
+}
+
+.finding_sections p{
+    padding-left:5px;
+    padding-right:5px;
+    z-index:1;
+    bottom:5px;
+    text-align:center;
+}
+
+    /*Search section*/
+    .association_search{
+        text-align:center;
+    }
+
+    input[type=text], select {
+        font-size:16px;
+        border:1px solid black;
+        padding: 6px;
+    }
+
+    .association_search button{
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+        display:inline-block;
+        padding: 6px 10px;
+    }
+
+    *{
+        box-sizing:border-box;
+    }
+
+    /*Responsive web design for the search part*/
+    @media screen and (max-width:600px) {
+        .finding_sections .association_search{
+            text-align:center;
+        }
+
+        .finding_sections input[type=text], .finding_sections .association_search button{
+            text-align:center;
+            display:block;
+            width:100%;
+            margin:0;
+            padding:14px;
+        }
+
+        .finding_sections input[type=text] {
+            border:1px solid black;
+        }
+    }
+
+/*New Zealand Tournaments update*/
+.tournamentsupdate_section{
+    grid-column:1/5;
+    grid-row:3/4;
+    z-index:1;
+}
+
+.tournamentsupdate_section p{
+    padding-left:50px;
+    padding-right:50px;
+}
+
+.tournamentsupdate_section_img{
+    grid-column:1/5;
+    grid-row:3/4;
+    background-image:url(Documents/Home/tournament_update.jpg);
+    background-repeat:no-repeat;
+    z-index:0;
+    opacity:0.10;
+    height:110%;
+    background-size:cover;
+}
+
+.tournamentsupdate_flexbox{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.tournament_child1 .tournament_child2{
+    width:50%;
+    height:100vh;
+    font-size:16px;
+    text-align:center;
+}
+
+.tournament_child1{
+    margin-left:10px;
+    width:20cm;
+    font-size:20px;
+    padding-bottom:10px;
+}
+
+.tournament_child1 li{
+    text-decoration: none;
+    text-indent: 30px;
+    margin-bottom:10px;
+}
+
+.tournament_child2{
+    margin-right:10px;
+}
+
+.tournament_child2_indent{
+    text-indent:30px;
+    font-size:12px;
+    list-style:square;
+}
+
+.tournament_child2 li a{
+    text-decoration:none;
+}
+
+.tournament_child2 li{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.tournament_child2 li a:hover{
+    color:#f6a456;
+}
+

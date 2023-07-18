@@ -1,0 +1,29 @@
+.useful_links_grid{
+    display:grid;
+    text-align:center;
+}
+
+.our_sources{
+    grid-column:1/2;
+    margin-left:130px;
+}
+
+.other_links{
+    grid-column:2/3;
+    margin-right:175px;
+}
+
+.useful_links_grid h2{
+    font-size:20px;
+    text-decoration:none;
+}
+
+.useful_links_grid a{
+    font-size:16px;
+    text-decoration:none;
+    color:black;
+}
+
+.useful_links_grid a:hover{
+    color:#f6a456;
+}

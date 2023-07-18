@@ -1,0 +1,232 @@
+/*Navigation Bar General*/
+.grid_container{
+    display:grid;
+    font:arial;
+    font-size:16px;
+    background-color:black;
+    padding-left:0px;
+    padding-right:5px;
+}
+
+.icons{
+    text-align:right;
+    margin-right:10px;
+    margin-top:none;
+}
+
+/*Different aspects*/
+.home{
+    grid-row:2/3;
+    grid-column:1/2;
+    text-align:left;
+    display:inline-block;
+    text-decoration:none;
+    margin-bottom:5px;
+}
+
+.rules{
+    grid-row:2/3;
+    grid-column:2/3;
+    text-align:left;
+    padding-top:15px;
+    padding-bottom:5px;
+}
+
+.mechanics{
+    grid-row:2/3;
+    grid-column:3/4;
+    text-align:left;
+    padding-top:15px;
+    padding-bottom:5px;
+}
+
+.special_aspects{
+    grid-row:2/3;
+    grid-column:4/5;
+    text-align:left;
+    padding-top:15px;
+    padding-bottom:5px;
+}
+
+.referee_news{
+    grid-row:2/3;
+    grid-column:5/6;
+    text-align:left;
+    padding-top:15px;
+    padding-bottom:5px;
+    text-decoration:none;
+}
+
+.referee_news a{
+    text-decoration:none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.referee_interviews{
+    grid-row:2/3;
+    grid-column:6/7;
+    text-align:left;
+    padding-top:15px;
+    padding-bottom:5px;
+}
+
+.referee_interviews a{
+    text-decoration:none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.contact_us{
+    grid-row:2/3;
+    grid-column:7/9;
+    text-align:left;
+    padding-top:15px;
+    padding-bottom:5px;
+}
+
+/*Search Bar*/
+.search_bar{
+    grid-row:2/3;
+    grid-column:9/10;
+    text-align:right;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-right:20px;
+}
+
+
+/*Dropdown for special aspects and contact us*/
+.dropdown_button{
+    background-color:black;
+    color:white;
+    padding:-10px;
+    font-size:16px;
+    border:none;
+    cursor:pointer;
+    font:arial;
+}
+
+.dropdown_button:hover{
+    color:#f6a456;
+}
+
+.dropdown{
+    position:relative;
+    display:inline-block;
+}
+
+.dropdown_content{
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding-top:10px;
+    float:left;
+  }
+  
+.dropdown_content a{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border:thin #212529;
+    margin-bottom:10px;
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:500;
+}
+
+.dropdown_content a:hover {background-color: black}
+
+.dropdown:hover .dropdown_content {
+  display: block;
+  z-index:2;
+}
+
+.dropdown_content h2{
+    font-size:16px;
+    text-decoration:none;
+    color:white;
+    display:block;
+    font-weight:500;
+    padding:12px 16px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.dropdown_content h2:hover{
+    color:#f6a456;
+}
+
+.grid_container a{
+    text-decoration:none;
+    color:white;
+}
+
+.grid_container a:hover{
+    color:#f6a456;
+}
+
+.dropside_button{
+    display:inline-block;
+}
+
+/*Search container*/
+.search_container input[type=text]{
+    padding:6px;
+    margin-top:5px;
+    font-size:16px;
+    border:none;
+}
+
+.search_container .search_container_button{
+    float:right;
+    
+}
+
+/*Responsive Web Design*/
+@media screen and (max-width: 600px) {
+    .grid_container a:not(:first-child) {display:none;}
+    .grid_container a.icon{
+        float:right;
+        display:block;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .grid_container.responsive {position:relative;}
+    .grid_container.responsive .icon{
+        position:absolute;
+        right:0;
+        top:0;
+    }
+    .topnav.responsive a{
+        float:none;
+        display:block;
+        text-align:left;
+    }
+}
+
+/*Side drop*/
+.dropside {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropside_content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .dropside_content a{
+    color:white;
+  }
+  
+  .dropside:hover .dropside_content {
+    display: inline-block;
+  }

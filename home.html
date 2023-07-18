@@ -1,0 +1,258 @@
+<html>
+<head>
+    <link rel="stylesheet" href="hyperlink.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+<!--Navigation Bar-->
+<div class="icons">
+    <a href="https://www.youtube.com/"><img src="Documents/icons/youTube.png" width="40px" height="40px"></a>
+    <a href="useful_links.html"><img src="Documents/icons/link.png" width="35px" height="30px"></a>
+</div>
+
+
+<div class="grid_container" id="nav_grid">
+    <!--Icon-->
+
+    <!--Home-->
+    <div class="home">
+        <a href="home.html"><img src="Documents/icons/logo.png" width="120px" height="40px"></a>
+    </div>
+
+    <!--Rule-->
+    <div class="rules">
+        <div class="dropdown">
+            <button class="dropdown_button">Rules</button>
+            <div class="dropdown_content">
+                <h2>Game Genre</h2>
+                <h2>Violations</h2>
+                <h2>Fouls</h2>
+                <h2>Duty and Power</h2>
+            </div>
+        </div>
+    </div>
+
+    <!--Mechanics-->
+    <div class="mechanics">
+        <div class="dropdown">
+            <button class="dropdown_button">Mechanics</button>
+            <div class="dropdown_content">
+                <h2>2PO</h2>
+                <h2>Signals</h2>
+            </div>
+        </div>
+    </div>
+
+    <!--Special Aspects-->
+    <div class="special_aspects">
+        <div class="dropdown">
+            <button class="dropdown_button">Special Aspects</button>
+            <div class="dropdown_content">
+                <a href="game_management.html">Game Management</a>
+                <a href="referee_professionalism.html">Referee Professionalism</a>
+                <a href="rule_changes_yearly.html">Rule changes yearly</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Referee News-->
+    <div class="referee_news">
+        <a href="referee_news.html">Referee News</a>
+    </div>
+
+    <!--Referee Interviews-->
+    <div class="referee_interviews">
+        <a href="refereeinterviews.html">Referee Interviews</a>
+    </div>
+
+    <!--Contact Us-->
+    <div class="contact_us">
+        <div class="dropdown">
+            <button class="dropdown_button">Contact Us</button>
+            <div class="dropdown_content">
+                <a href="about_us.html">About Us</a>
+                <a href="feedbacksystem.html">Feedback System</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Search Bar-->
+    <div class="search_bar">
+        <button onclick = "clicked_dropdown()" class="dropdown_button">
+            <img src="Documents/icons/searchbar.png" width="40px" height="30px">
+            <!--The output after the user clicked the magnifying glass-->
+            <div class="dropdown_content" id="searchbar">
+
+            </div>
+        </button>
+    </div>
+</div>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("nav_grid");
+        if (x.className === "grid_container") {
+            x.className += " responsive" ;
+        } else{
+            x.className = "grid_container"
+        }
+    }
+
+    //Code for the clicked dropdown
+    function clicked_dropdown() {
+        document.getElementById("searchbar").classList.toggle("show;")
+    }
+
+    window.onclick = function(event) {
+        if (!event.target.matches(".dropdown_button")) {
+            var dropdowns = document.getElementsByClassName("dropdown_contents")
+            var i
+            for (i=0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains("show")){
+                    openDropdown.classList.remove("show");
+                }
+            }
+        }
+    }
+</script>
+
+<!--Home parts-->
+<div class="home_grid">
+    <!--News update-->
+    <div class="news_sections">
+        <div class="slideshow-container">
+            <!--News 1-->
+            <div class="mySlides fade">
+                <a href="news1.html">2021 NATIONAL LEAGUES REFEREE PANEL ANNOUNCED</a>
+            </div>
+
+            <div class="mySlides fade">
+                <a href="news2.html">AON U17 NATIONALS HEADS TO THE HUTT VALLEY FOR 2023</a>
+            </div>
+
+            <div class="mySlides fade">
+                <a href="news3.html">BASKETBALL WITHOUT BORDERS ASIA 2023 A SUCCESS FOR KIWI ATHLETES</a>
+            </div>
+
+            <div class="mySlides fade">
+                <a href="news3.html">TOM ABERCROMBIE ANNOUNCES TALL BLACKS RETIREMENT</a>
+            </div>
+
+            <div class="mySlides fade">
+                <a href="news3.html">NATIONAL TEAM HOPEFULS IMPRESS AT U17 NATIONAL CAMP</a>
+            </div>
+        </div>
+
+        <br>
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
+
+    <!--Introduction video-->
+    <div class="video_sections">
+        <iframe width="600" height="75%" src="https://www.youtube.com/embed/fZh21NEu7Dw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width:100%;height:300px;"></iframe>
+    </div>
+
+    <!--Finding the nearest association-->
+    <div class="finding_sections">
+        <h2>Interested in refereeing? Find your nearest association</h2>
+        <p>Simply type your address in and it will direct you to the nearest association in New Zealand</p>
+        <!--Search button-->
+        <div class="association_search">
+            <form action="/association_search.php">
+                <input type="text" placeholder="City or towns" name="search">
+                <button type="submit"><img src="Documents/Home/magnetic_glass.png" width="40px" height="30px" style="text-decoration: none;"></button>
+            </form>
+        </div>
+    </div>
+    <div class="finding_sections_img"></div>
+
+    <!--Tournaments update-->
+    <div class="tournamentsupdate_section">
+        <h2 style="text-align:center">New Zealand Tournaments update</h2>
+        <!--Arrange the two texts in the tournament updates in flexbox format-->
+        <div class="tournamentsupdate_flexbox">
+            <div class="tournament_child1">
+                <p>There are a numbers of basketball tournaments in New Zealand that you can attend, depend on your skill level.
+                    The tournaments listed here are tournaments that are designed for high level performances.
+                    <li>For Nationals, you must be selected by Basketball New Zealand.</li>
+                    <li>For Premierships and Regional Cups, you will represent your school</li>
+                    <li>For Regionals, you will need to contact your association</li>
+                </p>
+            </div>
+            <!--Links to the tournament webpage-->
+            <div class="tournament_child2">
+                <li><a href="https://nz.basketball/competitions/reps/u17-nationals/">4-7 July 2023: AON U17 Nationals, Wellington</a></li>
+                <li><a href="https://nz.basketball/competitions/reps/u15-nationals/">12-15 July 2023: AON U15 Nationals, Auckland</a></li>
+                <li><a href="https://nz.basketball/competitions/schools/juniors/">26-29 August 2023: Junior Premiership</a></li>
+                    <div class="tournament_child2_indent">
+                        <li>Zone 1: Auckland</li>
+                        <li>Zone 2: Rotorua</li>
+                        <li>Zone 3: Hawkes Bay</li>
+                        <li>Zone 4: Dunedin</li>
+                    </div>
+                <li><a href="https://nz.basketball/competitions/schools/a-premierships/">30 August - 1 September 2023: A Premierships</a></li>
+                    <div class="tournament_child2_indent">
+                        <li>North Island:</li>
+                        <li>South Island:</li>
+                    </div>
+                <li><a href="https://nz.basketball/competitions/schools/regional-cups/">30 August - 1 September 2023: Regional Cups</a></li>
+                    <div class="tournament_child2_indent">
+                        <li>Zone 1: Auckland</li>
+                        <li>Zone 2: New Plymouth</li>
+                        <li>Zone 3: Timaru</li>
+                    </div>
+                <li><a href="https://nz.basketball/competitions/schools/aa-premierships/">30 August - 2 September 2023: AA Premierships</a></li>
+                    <div class="tournament_child2_indent">
+                        <li>Zone 1: Northshore, Auckland</li>
+                        <li>Zone 2: Rotorua</li>
+                        <li>Zone 3: Hawkes Bay</li>
+                        <li>Zone 4: Dunedin</li>
+                    </div>
+                <li><a href="https://nz.basketball/competitions/schools/national-championships/">25-30 September 2023: Secondary School Nationals, Palmerston North</a></li>
+            </div>
+        </div>
+    </div>
+    <div class="tournamentsupdate_section_img"></div>
+</div>
+
+</body>
+
+</html>
+  
