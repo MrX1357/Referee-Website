@@ -1,0 +1,132 @@
+<html>
+
+<body>
+    <ul id="menu">
+        <li class="parent"><a href="home.html">Home</a></li>
+        <li class="parent"><a href="#">Rules</a>
+            <ul class="child">
+                <li class="parent"><a href="#">Game genre <span class="expand">»</span></a>
+                    <ul class="child">
+                        <li><a href="#">Court and equipment requirements</a></li>
+                        <li><a href="#">Team requirements</a></li>
+                        <li><a href="#">Player injury</a></li>
+                        <li><a href="#">Substitution</a></li>
+                        <li><a href="#">5 fouls on a team</a></li>
+                        <li><a href="#">5 fous on a player</a></li>
+                        <li><a href="#">Free throw</a></li>
+                        <li><a href="#">Special Situation</a></li>
+                        <li><a href="#">Correctable errors</a></li>
+                    </ul></li>
+                <li class="parent"><a href="#">Violations <span class="expand">»</span></a>
+                    <ul class="child">
+                        <li><a href="#">Travelling</a></li>
+                        <li><a href="#">Illegal dribble</a></li>
+                        <li><a href="#">Kickball</a></li>
+                        <li><a href="#">3 Seconds</a></li>
+                        <li><a href="#">5 Seconds</a></li>
+                        <li><a href="#">8 Seconds</a></li>
+                        <li><a href="#">Backcourt</a></li>
+                        <li><a href="#">Goal attending and interference</a></li>
+                    </ul></li>
+                <li><a href="#">Magnet Toys</a></li>
+            </ul></li>
+        <li class="parent"><a href="#">Mechanics</a>
+            <ul class="child">
+                <li class="parent"><a href="#">2PO <span class="expand">»</span></a>
+                    <ul class="child">
+                        <li><a href="2po_aor.html">Area of responsibility</a></li>
+                        <li><a href="2po_lead.html">Lead positioning</a></li>
+                        <li><a href="2po_trail.html">Trail positioning</a></li>
+                        <li><a href="2po_jumpball.html">Jumpball position</a></li>
+                        <li><a href="2po_freethrow.html">Freethrow position</a></li>
+                        <li><a href="2po_switches.html">Switches</a></li>
+                    </ul></li>
+                <li><a href="#">Signals</a></li>
+            </ul></li>
+        <li class="parent"><a href="#">Special Aspects</a>
+            <ul class="child">
+                <li><a href="#">Game management</a></li>
+                <li><a href="#">Referee professionalism</a></li>
+                <li><a href="#">Rule changes yearly</a></li>
+            </ul></li>
+    </ul>
+
+<style>
+.menu{
+    background-color:black;
+}
+
+.parent {
+	display: block;
+	position: relative;
+	float: left;
+	line-height: 30px;
+	background-color: #4FA0D8;
+	border-right: #CCC 1px solid;
+}
+
+.parent a {
+	margin: 10px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.parent a:hover{
+    color:orange;
+}
+
+.parent:hover>ul {
+	display: block;
+	position: absolute;
+}
+
+.child {
+	display: none;
+}
+
+.child li {
+	background-color: #E4EFF7;
+	line-height: 30px;
+	border-bottom: #CCC 1px solid;
+	border-right: #CCC 1px solid;
+	width: 100%;
+}
+
+.child li a {
+	color: #000000;
+}
+
+.child li a:hover{
+    color:orange;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0px;
+	min-width: 10em;
+}
+
+ul ul ul {
+	left: 100%;
+	top: 0;
+	margin-left: 1px;
+}
+
+li:hover {
+	background-color: #95B4CA;
+}
+
+.parent li:hover {
+	background-color: #F0F0F0;
+}
+
+.expand {
+	font-size: 12px;
+	float: right;
+	margin-right: 5px;
+}
+</style>
+
+</body>
+</html>

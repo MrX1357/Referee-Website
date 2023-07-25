@@ -1,3 +1,25 @@
+/*Applied to all pages*/
+h1{
+    size:24px;
+    font-weight:bold;
+    text-align:center;
+    margin-top:20px;
+}
+
+h2{
+    size:20px;
+    font-weight:normal;
+}
+
+p{
+    size:16px;
+}
+
+h1 h2 p{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
 /*Navigation Bar General*/
 .grid_container{
     display:grid;

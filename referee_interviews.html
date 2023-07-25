@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="hyperlink.css">
+    <link rel="stylesheet" href="referee_interviews.css">
+</head>
+
+<body>
+<!--Navigation Bar-->
+<div class="icons">
+    <a href="https://www.youtube.com/"><img src="Documents/icons/youTube.png" width="40px" height="40px"></a>
+    <a href="useful_links.html"><img src="Documents/icons/link.png" width="35px" height="30px"></a>
+</div>
+
+
+<div class="grid_container" id="nav_grid">
+    <!--Icon-->
+
+    <!--Home-->
+    <div class="home">
+        <a href="home.html"><img src="Documents/icons/logo.png" width="120px" height="40px"></a>
+    </div>
+
+    <!--Rule-->
+    <div class="rules">
+        <div class="dropdown">
+            <button class="dropdown_button">Rules</button>
+            <div class="dropdown_content">
+                <h2>Game Genre</h2>
+                <h2>Violations</h2>
+                <h2>Fouls</h2>
+                <h2>Duty and Power</h2>
+            </div>
+        </div>
+    </div>
+
+    <!--Mechanics-->
+    <div class="mechanics">
+        <div class="dropdown">
+            <button class="dropdown_button">Mechanics</button>
+            <div class="dropdown_content">
+                <h2>2PO</h2>
+                <h2>Signals</h2>
+            </div>
+        </div>
+    </div>
+
+    <!--Special Aspects-->
+    <div class="special_aspects">
+        <div class="dropdown">
+            <button class="dropdown_button">Special Aspects</button>
+            <div class="dropdown_content">
+                <a href="game_management.html">Game Management</a>
+                <a href="referee_professionalism.html">Referee Professionalism</a>
+                <a href="rule_changes_yearly.html">Rule changes yearly</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Referee News-->
+    <div class="referee_news">
+        <a href="referee_news.html">Referee News</a>
+    </div>
+
+    <!--Referee Interviews-->
+    <div class="referee_interviews">
+        <a href="referee_interviews.html">Referee Interviews</a>
+    </div>
+
+    <!--Contact Us-->
+    <div class="contact_us">
+        <div class="dropdown">
+            <button class="dropdown_button">Contact Us</button>
+            <div class="dropdown_content">
+                <a href="about_us.html">About Us</a>
+                <a href="feedbacksystem.html">Feedback System</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Search Bar-->
+    <div class="search_bar">
+        <button onclick = "clicked_dropdown()" class="dropdown_button">
+            <img src="Documents/icons/searchbar.png" width="40px" height="30px">
+            <!--The output after the user clicked the magnifying glass-->
+            <div class="dropdown_content" id="searchbar">
+
+            </div>
+        </button>
+    </div>
+</div>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("nav_grid");
+        if (x.className === "grid_container") {
+            x.className += " responsive" ;
+        } else{
+            x.className = "grid_container"
+        }
+    }
+
+    //Code for the clicked dropdown
+    function clicked_dropdown() {
+        document.getElementById("searchbar").classList.toggle("show;")
+    }
+
+    window.onclick = function(event) {
+        if (!event.target.matches(".dropdown_button")) {
+            var dropdowns = document.getElementsByClassName("dropdown_contents")
+            var i
+            for (i=0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains("show")){
+                    openDropdown.classList.remove("show");
+                }
+            }
+        }
+    }
+</script>
+
+<!--Referee Interview section-->
+<h1>Referee Interviews</h1>
+
+<div class="referee_interviews_grid">
+    <div class="text">
+        <p style="text-align:center;">We are interviewing the top 6 referees in New Zealand. 3 Males and 3 Females.</p>
+    </div>
+
+    <div class="interview_box">
+        <!--6 top basketball referees in New Zealand-->
+        <div class="interviews_display_container">
+            <div class="interviews">
+                <h2>Referee #1</h2>
+                <div class="interviews_grid">
+                    <div class="interviews_video">
+                        <iframe width="120%" style="height:220px;text-align: center;padding-right:15px;padding-top:40px;" src="https://www.youtube.com/embed/fZh21NEu7Dw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <p>XXXXXXXXXXXXXXXXXXXXXXX</p>
+                </div>
+            </div>
+
+            <div class="interviews">
+                <h2>Referee #2</h2>
+                <div class="interviews_grid">
+                    <div class="interviews_video">
+                        <iframe width="120%" style="height:220px;text-align: center;padding-right:15px;padding-top:40px;" src="https://www.youtube.com/embed/fZh21NEu7Dw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <p>XXXXXXXXXXXXXXXXXXXXXXX</p>
+                </div>
+            </div>
+
+            <div class="interviews">
+                <h2>Referee #3</h2>
+                <div class="interviews_grid">
+                    <div class="interviews_video">
+                        <iframe width="120%" style="height:220px;text-align: center;padding-right:15px;padding-top:40px;" src="https://www.youtube.com/embed/fZh21NEu7Dw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <p>XXXXXXXXXXXXXXXXXXXXXXX</p>
+                </div>
+            </div>
+
+            <div class="interviews">
+                <h2>Referee #4</h2>
+                <div class="interviews_grid">
+                    <div class="interviews_video">
+                        <iframe width="120%" style="height:220px;text-align: center;padding-right:15px;padding-top:40px;" src="https://www.youtube.com/embed/fZh21NEu7Dw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <p>XXXXXXXXXXXXXXXXXXXXXXX</p>
+                </div>
+            </div>
+
+            <div class="interviews">
+                <h2>Referee #5</h2>
+                <div class="interviews_grid">
+                    <div class="interviews_video">
+                        <iframe width="120%" style="height:220px;text-align: center;padding-right:15px;padding-top:40px;" src="https://www.youtube.com/embed/fZh21NEu7Dw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <p>XXXXXXXXXXXXXXXXXXXXXXX</p>
+                </div>
+            </div>
+
+            <div class="interviews">
+                <h2>Referee #6</h2>
+                <div class="interviews_grid">
+                    <div class="interviews_video">
+                        <iframe width="120%" style="height:220px;text-align: center;padding-right:15px;padding-top:40px;" src="https://www.youtube.com/embed/fZh21NEu7Dw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+                </div>
+            </div>
+
+            <!--The arrow for users to switch pages-->
+            <a class="prev" onclick="plusDivs(-1)">
+                <!--Change the arrow's colour to orange when hover-->
+                <div class="change_photos">
+                    <div class="change_photo">
+                        <img src="Documents/Referee Interviews/left_arrow1.png" height="50px;"></img>
+                    </div>
+                    <div class="change_photo">
+                        <img src="Documents/Referee Interviews/left_arrow2.png" height="50px"></img>
+                    </div>
+                </div>
+            </a>
+
+            <a class="next" onclick="plusDivs(1)">
+                <div class="change_photos">
+                    <div class="change_photo">
+                        <img src="Documents/Referee Interviews/right_arrow1.png" height="50px;"></img>
+                    </div>
+
+                    <div class="change_photo">
+                        <img src="Documents/Referee Interviews/right_arrow2.png" height="50px;"></img>
+                    </div>
+                </div>
+            </a>
+        </div>
+       
+    </div>
+
+    <!--JS for Interviews-->
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+        
+        function currentDivs(n){
+            showDivs(slideIndex = n)
+        }
+
+        function showDivs(n) {
+            var i;
+            var x=document.getElementsByClassName("interviews");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display="block";
+        }
+    </script>
+
+    <!--Short cuts          -->
+    <div class="expansion">
+        <h2>OUR REFEREES</h2>
+        <!--When the user clicked on it, it will expand-->
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+            <div style="text-align:left;line-height:50px;display:inline-block;padding-left:5px;padding-right:5px;">
+                <span class="interview_dot" onclick="currentDivs(1)">#1</span> 
+                <span class="interview_dot" onclick="currentDivs(2)">#2</span> 
+                <span class="interview_dot" onclick="currentDivs(3)">#3</span>
+                <span class="interview_dot" onclick="currentDivs(4)">#4</span> 
+                <span class="interview_dot" onclick="currentDivs(5)">#5</span> 
+                <span class="interview_dot" onclick="currentDivs(6)">#6</span> 
+            </div>
+
+        </div>
+
+        <button class="openbtn" onclick="openNav()"><<<</button>
+        <script>
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "250px" ;
+            }
+
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width="0";
+            }
+        </script>
+    </div>
+</div>
