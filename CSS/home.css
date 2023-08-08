@@ -1,5 +1,4 @@
 
-
 /*Home display*/
 .home_grid{
     display:grid;
@@ -16,48 +15,48 @@
     grid-column:1/3;
     grid-row:1/2;
     /*distance from the navigation bar*/
-    padding-right:100px;
     z-index:1;
-    width:auto;
-}
-
-.news_sections img{
-    padding-top:16px;
-    grid-column:1/3;
-    grid-row:1/2;
+    border:1px solid black;
+    width:20cm;
+    height:auto;
+    margin-right:none;
     background-repeat:no-repeat;
-    background-image:url(Documents/Home/home_news.jfif);
-    background-size:150% 150%;
-    opacity:0.15;
-    z-index:0;
+    background-size:cover;
+    background-image:url("Documents/Home/home_news.png")
 }
 
 .news_sections a{
-    size:16px;
+    size:20px;
     text-align:center;
     padding-left:20px;
     text-decoration:none;
+    color:white;
 }
+
+    .news_sections a:hover{
+        color:#f6a456;
+    }
 
     /*Slideshow*/
     .mySlides{
         display:none;
+        background-color:#7a6f6d;
     }
 
     .slideshow-container{
         position:relative;
-        margin:auto;
+        margin-top:5cm;
     }
 
     /*The dots for user to switch the slide*/
     .dot{
         cursor:pointer;
-        height:15px;
-        width:15px;
-        margin:0 10px;
+        height:20px;
+        width:20px;
         background-color:black;
-        border-radius:100%;
-        display:inline-block;
+        float:left;
+        margin-left:20px;
+        color:white;
     }
 
     .active, .dot:hover{
@@ -79,9 +78,10 @@
 .video_sections{
     grid-column:3/5;
     grid-row:1/2;
-    padding-left:10px;
     height:auto;
-    position:relative;
+    margin-left:none;
+    width:500px;
+    text-align:left;
 }
 
 /*Nearest association*/
@@ -182,7 +182,7 @@
     background-repeat:no-repeat;
     z-index:0;
     opacity:0.10;
-    height:110%;
+    height:auto;
     background-size:cover;
 }
 
@@ -239,6 +239,16 @@
 
 .tournament_child2 li a:hover{
     color:#f6a456;
+}
+
+.extension{
+    cursor: pointer;
+    outline:none;
+}
+
+.hidden_text{
+    display: none;
+    overflow: hidden;
 }
 
     /*Hovered arrow*/

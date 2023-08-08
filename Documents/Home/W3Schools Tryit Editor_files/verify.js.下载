@@ -1,0 +1,10 @@
+
+
+try{__tagObject_callback_385423774424({ImpressionID:"f7bf9a2134e54c8da79b6294d5d81897", ServerPublicDns:"rtbc-ae1.doubleverify.com"});}catch(e){}
+try{$dvbs.pubSub.publish('BeforeDecisionRender', "f7bf9a2134e54c8da79b6294d5d81897");}catch(e){}
+try{__verify_callback_385423774424({
+ResultID:2,
+Passback:"",
+AdWidth:728,
+AdHeight:90});}catch(e){}
+try{$dvbs.pubSub.publish('AfterDecisionRender', "f7bf9a2134e54c8da79b6294d5d81897");}catch(e){}

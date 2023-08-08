@@ -1,122 +1,65 @@
 <html>
 <head>
-    <link rel="stylesheet" href="hyperlink.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="CSS/hyperlink.css">
+    <link rel="stylesheet" href="CSS/home.css">
 </head>
 
 <body>
-<!--Navigation Bar-->
+<!--Icons-->
 <div class="icons">
     <a href="https://www.youtube.com/"><img src="Documents/icons/youTube.png" width="40px" height="40px"></a>
     <a href="useful_links.html"><img src="Documents/icons/link.png" width="35px" height="30px"></a>
-</div>
-
-
-<div class="grid_container" id="nav_grid">
-    <!--Icon-->
-
-    <!--Home-->
-    <div class="home">
-        <a href="home.html"><img src="Documents/icons/logo.png" width="120px" height="40px"></a>
-    </div>
-
-    <!--Rule-->
-    <div class="rules">
-        <div class="dropdown">
-            <button class="dropdown_button">Rules</button>
-            <div class="dropdown_content">
-                <h2>Game Genre >>></h2>
-                <h2>Violations >>></h2>
-                <h2>Fouls >>></h2>
-                <h2>Duty and Power >>></h2>
-            </div>
-        </div>
-    </div>
-
-    <!--Mechanics-->
-    <div class="mechanics">
-        <div class="dropdown">
-            <button class="dropdown_button">Mechanics</button>
-            <div class="dropdown_content">
-                <h2>2PO >>></h2>
-                <h2>Signals >>></h2>
-            </div>
-        </div>
-    </div>
-
-    <!--Special Aspects-->
-    <div class="special_aspects">
-        <div class="dropdown">
-            <button class="dropdown_button">Special Aspects</button>
-            <div class="dropdown_content">
-                <a href="game_management.html">Game Management</a>
-                <a href="referee_professionalism.html">Referee Professionalism</a>
-                <a href="rule_changes_yearly.html">Rule changes yearly</a>
-            </div>
-        </div>
-    </div>
-
-    <!--Referee News-->
-    <div class="referee_news">
-        <a href="referee_news.html">Referee News</a>
-    </div>
-
-    <!--Referee Interviews-->
-    <div class="referee_interviews">
-        <a href="referee_interviews.html">Referee Interviews</a>
-    </div>
-
-    <!--Contact Us-->
-    <div class="contact_us">
-        <div class="dropdown">
-            <button class="dropdown_button">Contact Us</button>
-            <div class="dropdown_content">
-                <a href="about_us.html">About Us</a>
-                <a href="feedbacksystem.html">Feedback System</a>
-            </div>
-        </div>
-    </div>
-
-    <!--Search Bar-->
-    <div class="search_bar">
-        <button onclick = "clicked_dropdown()" class="dropdown_button">
-            <img src="Documents/icons/searchbar.png" width="40px" height="30px">
-            <!--The output after the user clicked the magnifying glass-->
-            <div class="dropdown_content" id="searchbar">
-
-            </div>
-        </button>
-    </div>
-</div>
-
-<script>
-    function myFunction() {
-        var x = document.getElementById("nav_grid");
-        if (x.className === "grid_container") {
-            x.className += " responsive" ;
-        } else{
-            x.className = "grid_container"
-        }
-    }
-
-    //Code for the clicked dropdown
-    function clicked_dropdown() {
-        document.getElementById("searchbar").classList.toggle("show;")
-    }
-
-    window.onclick = function(event) {
-        if (!event.target.matches(".dropdown_button")) {
-            var dropdowns = document.getElementsByClassName("dropdown_contents")
-            var i
-            for (i=0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains("show")){
-                    openDropdown.classList.remove("show");
-                }
-            }
-        }
-    }
-</script>
+  </div> 
+  
+  <!--Navigation Bar-->  
+  <ul class="main-navigation">
+      <li class="logo"><a href="#">
+        <img src="Documents/Icons/logo.png" width="120px" height="40px">
+      </a></li>
+  
+      <li class="top"><a href="#">Rules</a>
+        <ul>
+          <li><a href="#">Game Genre >>></a></li>
+          <li><a href="#">Violations >>></a>
+            <ul class="bullet_points">
+              <li><a href="#">Travelling</a></li>
+              <li><a href="#">Double Dribble</a></li>
+              <li><a href="#">Kickball</a></li>
+              <li><a href="#">Carrying</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Fouls >>></a>
+          <li><a href="#">Duty and Power >>></a>
+        </ul>
+      </li>
+  
+      <li class="top"><a href="#">Mechanics</a>
+        <ul>
+          <li><a href="#">Themes</a></li>
+          <li><a href="#">Plugins</a></li>
+          <li><a href="#">Custom Post Types</a>
+            <ul>
+              <li><a href="#">Portfolios</a></li>
+              <li><a href="#">Testimonials</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Options</a></li>
+        </ul>
+      </li>
+  
+      <li class="top"><a href="#">Special Aspects</a></li>
+  
+      <li class="top"><a href="referee_news.html">Referee News</a></li>
+  
+      <li class="top"><a href="referee_interviews.html">Referee Interviews</a></li>
+  
+      <li class="top"><a href="#">Contact Us</a>
+        <ul>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="#">Feedback Form</a>
+        </ul>
+      </li>
+  </ul>
 
 <!--Home parts-->
 <div class="home_grid">
@@ -147,11 +90,15 @@
 
         <br>
         <div style="text-align: center;">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(1)">1</span>
+            <span class="dot" onclick="currentSlide(2)">2</span>
+            <span class="dot" onclick="currentSlide(3)">3</span>
+            <span class="dot" onclick="currentSlide(4)">4</span>
+            <span class="dot" onclick="currentSlide(5)">5</span>
+            <!--Link to News page-->
+            <a href="referee_news.html">
+                <span class="dot" onclick="currentSlide(6)" style="width:3cm;padding:0px;">More News</span>
+            </a>
         </div>
     </div>
 
@@ -186,7 +133,7 @@
 
     <!--Introduction video-->
     <div class="video_sections">
-        <iframe width="550" height="75%" src="https://www.youtube.com/embed/fZh21NEu7Dw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width:100%;height:300px;"></iframe>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fZh21NEu7Dw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="height:300px;"></iframe>
     </div>
 
     <!--Finding the nearest association-->
@@ -210,49 +157,86 @@
         <div class="tournamentsupdate_flexbox">
             <div class="tournament_child1">
                 <p>There are a numbers of basketball tournaments in New Zealand that you can attend, depend on your skill level.
-                    The tournaments listed here are tournaments that are designed for high level performances.
+                    The tournaments listed here are tournaments that are designed for high level performances. </p>
                     <li>For Nationals, you must be selected by Basketball New Zealand.</li>
                     <li>For Premierships and Regional Cups, you will represent your school</li>
                     <li>For Regionals, you will need to contact your association</li>
-                </p>
             </div>
             <!--Links to the tournament webpage-->
             <div class="tournament_child2">
-                <li><a href="https://nz.basketball/competitions/reps/u17-nationals/">4-7 July 2023: AON U17 Nationals, Wellington</a></li>
-                <li><a href="https://nz.basketball/competitions/reps/u15-nationals/">12-15 July 2023: AON U15 Nationals, Auckland</a></li>
-                <li><a href="https://nz.basketball/competitions/schools/juniors/">26-29 August 2023: Junior Premiership</a>
+                <!--Tournament 3-->
+                <li><a href="https://nz.basketball/competitions/schools/juniors/">26-29 August 2023: Junior Premiership</a></li>
+                <button type="button" class="extension">
                     <i class="arrow down"></i>
-                </li>
-                    <div class="tournament_child2_indent">
-                        <li>Zone 1: Auckland</li>
-                        <li>Zone 2: Rotorua</li>
-                        <li>Zone 3: Hawkes Bay</li>
-                        <li>Zone 4: Dunedin</li>
+                </button>
+                    <div class="hidden_text">
+                        <div class="tournament_child2_indent">
+                            <li>Zone 1: Auckland</li>
+                            <li>Zone 2: Rotorua</li>
+                            <li>Zone 3: Hawkes Bay</li>
+                            <li>Zone 4: Dunedin</li>
+                        </div>
                     </div>
                 <li><a href="https://nz.basketball/competitions/schools/a-premierships/">30 August - 1 September 2023: A Premierships</a></li>
-                    <div class="tournament_child2_indent">
-                        <li>North Island:</li>
-                        <li>South Island:</li>
+                    <button type="button" class="extension">
+                        <i class="arrow down"></i>
+                    </button>
+                    <div class="hidden_text">
+                        <div class="tournament_child2_indent">
+                            <li>North Island:</li>
+                            <li>South Island:</li>
+                        </div>
                     </div>
+
                 <li><a href="https://nz.basketball/competitions/schools/regional-cups/">30 August - 1 September 2023: Regional Cups</a></li>
-                    <div class="tournament_child2_indent">
-                        <li>Zone 1: Auckland</li>
-                        <li>Zone 2: New Plymouth</li>
-                        <li>Zone 3: Timaru</li>
+                    <button type="button" class="extension">
+                        <i class="arrow down"></i>
+                    </button>
+                    <div class="hidden_text">
+                        <div class="tournament_child2_indent">
+                            <li>Zone 1: Auckland</li>
+                            <li>Zone 2: New Plymouth</li>
+                            <li>Zone 3: Timaru</li>
+                        </div>
                     </div>
+
                 <li><a href="https://nz.basketball/competitions/schools/aa-premierships/">30 August - 2 September 2023: AA Premierships</a></li>
-                    <div class="tournament_child2_indent">
-                        <li>Zone 1: Northshore, Auckland</li>
-                        <li>Zone 2: Rotorua</li>
-                        <li>Zone 3: Hawkes Bay</li>
-                        <li>Zone 4: Dunedin</li>
+                    <button type="button" class="extension">
+                        <i class="arrow down"></i>
+                    </button>
+                    <div class="hidden_text">
+                        <div class="tournament_child2_indent">
+                            <li>Zone 1: Northshore, Auckland</li>
+                            <li>Zone 2: Rotorua</li>
+                            <li>Zone 3: Hawkes Bay</li>
+                            <li>Zone 4: Dunedin</li>
+                        </div>
                     </div>
-                <li><a href="https://nz.basketball/competitions/schools/national-championships/">25-30 September 2023: Secondary School Nationals, Palmerston North</a></li>
+                
+                    <li><a href="https://nz.basketball/competitions/schools/national-championships/">25-30 September 2023: Secondary School Nationals, Palmerston North</a></li>
             </div>
         </div>
     </div>
     <div class="tournamentsupdate_section_img"></div>
 </div>
+
+<!--JS for collapsible-->
+<script>
+    var extension = document.getElementsByClassName("extension");
+    var i;
+
+for (i = 0; i < extension.length; i++) {
+  extension[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var hidden_text = this.nextElementSibling;
+    if (hidden_text.style.display === "block") {
+      hidden_text.style.display = "none";
+    } else {
+      hidden_text.style.display = "block";
+    }
+  });
+}
+</script>
 
 </body>
 

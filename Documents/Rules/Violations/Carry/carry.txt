@@ -1,0 +1,6 @@
+Occurs when the dribbling player
+continues to dribble after allowing the
+ball to come to rest in one or both hands.
+This is also referred to as ‘palming’ the
+ball becase the ball comes to rest in the
+palm of the hand.

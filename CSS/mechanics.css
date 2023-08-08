@@ -1,0 +1,58 @@
+/*This is the general layout for the mechanics page*/
+
+.mechanics_grid{
+    display:grid;
+    margin-top:20px;
+}
+
+.expansion{
+    float:top;
+    grid-row:1/2;
+    grid-column:1/2;
+    margin-left:20px;
+    margin-right:20px;
+    border:1px black solid;
+    width:3.5cm;
+    height:4cm;
+    padding:5px;
+    background-color:#ebebeb;
+}
+
+    .expansion p{
+        width:2cm;
+    }
+
+.mechanics_section{
+    grid-column:2/3;
+    grid-row:1/2;
+    margin-bottom:20px;
+}
+
+.spread_line p{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+/*Use the flex box to spread out the text and image*/
+.text_flex{
+    display:flex;
+    justify-content:space-between;
+    height:8cm;
+}
+
+    .text{
+        text-align: center;
+        font-size: 16px;
+        height: 50px;
+    }
+
+    .text p{
+        width:12cm;
+        margin-right:20px;
+    }
+
+    .text img{
+        width:12cm;
+        height:8cm;
+    }
+

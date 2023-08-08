@@ -1,0 +1,5 @@
+“A player cannot deliberately kick the ball or block it
+with his leg”
+
+If 13 seconds or less are remaining on the shot clock (if any),
+the referee shall show the “reset” signal to reset the device to 14 seconds.

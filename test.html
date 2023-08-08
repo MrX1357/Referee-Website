@@ -1,132 +1,149 @@
-<html>
-
 <body>
-    <ul id="menu">
-        <li class="parent"><a href="home.html">Home</a></li>
-        <li class="parent"><a href="#">Rules</a>
-            <ul class="child">
-                <li class="parent"><a href="#">Game genre <span class="expand">»</span></a>
-                    <ul class="child">
-                        <li><a href="#">Court and equipment requirements</a></li>
-                        <li><a href="#">Team requirements</a></li>
-                        <li><a href="#">Player injury</a></li>
-                        <li><a href="#">Substitution</a></li>
-                        <li><a href="#">5 fouls on a team</a></li>
-                        <li><a href="#">5 fous on a player</a></li>
-                        <li><a href="#">Free throw</a></li>
-                        <li><a href="#">Special Situation</a></li>
-                        <li><a href="#">Correctable errors</a></li>
-                    </ul></li>
-                <li class="parent"><a href="#">Violations <span class="expand">»</span></a>
-                    <ul class="child">
-                        <li><a href="#">Travelling</a></li>
-                        <li><a href="#">Illegal dribble</a></li>
-                        <li><a href="#">Kickball</a></li>
-                        <li><a href="#">3 Seconds</a></li>
-                        <li><a href="#">5 Seconds</a></li>
-                        <li><a href="#">8 Seconds</a></li>
-                        <li><a href="#">Backcourt</a></li>
-                        <li><a href="#">Goal attending and interference</a></li>
-                    </ul></li>
-                <li><a href="#">Magnet Toys</a></li>
-            </ul></li>
-        <li class="parent"><a href="#">Mechanics</a>
-            <ul class="child">
-                <li class="parent"><a href="#">2PO <span class="expand">»</span></a>
-                    <ul class="child">
-                        <li><a href="2po_aor.html">Area of responsibility</a></li>
-                        <li><a href="2po_lead.html">Lead positioning</a></li>
-                        <li><a href="2po_trail.html">Trail positioning</a></li>
-                        <li><a href="2po_jumpball.html">Jumpball position</a></li>
-                        <li><a href="2po_freethrow.html">Freethrow position</a></li>
-                        <li><a href="2po_switches.html">Switches</a></li>
-                    </ul></li>
-                <li><a href="#">Signals</a></li>
-            </ul></li>
-        <li class="parent"><a href="#">Special Aspects</a>
-            <ul class="child">
-                <li><a href="#">Game management</a></li>
-                <li><a href="#">Referee professionalism</a></li>
-                <li><a href="#">Rule changes yearly</a></li>
-            </ul></li>
-    </ul>
+
+<!--Icons-->
+<div class="icons">
+  <a href="https://www.youtube.com/"><img src="Documents/icons/youTube.png" width="40px" height="40px"></a>
+  <a href="useful_links.html"><img src="Documents/icons/link.png" width="35px" height="30px"></a>
+</div> 
+
+<!--Navigation Bar-->  
+<ul class="main-navigation">
+    <li class="logo"><a href="#">
+      <img src="Documents/Icons/logo.png" width="120px" height="40px">
+    </a></li>
+
+    <li class="top"><a href="#">Rules</a>
+      <ul>
+        <li><a href="#">Game Genre >>></a></li>
+        <li><a href="#">Violations >>></a>
+          <ul class="bullet_points">
+            <li><a href="#">Travelling</a></li>
+            <li><a href="#">Double Dribble</a></li>
+            <li><a href="#">Kickball</a></li>
+            <li><a href="#">Carrying</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Fouls >>></a>
+        <li><a href="#">Duty and Power >>></a>
+      </ul>
+    </li>
+
+    <li class="top"><a href="#">Mechanics</a>
+      <ul>
+        <li><a href="#">Themes</a></li>
+        <li><a href="#">Plugins</a></li>
+        <li><a href="#">Custom Post Types</a>
+          <ul>
+            <li><a href="#">Portfolios</a></li>
+            <li><a href="#">Testimonials</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Options</a></li>
+      </ul>
+    </li>
+
+    <li class="top"><a href="#">Special Aspects</a></li>
+
+    <li class="top"><a href="referee_news.html">Referee News</a></li>
+
+    <li class="top"><a href="referee_interviews.html">Referee Interviews</a></li>
+
+    <li class="top"><a href="#">Contact Us</a>
+      <ul>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="#">Feedback Form</a>
+      </ul>
+    </li>
+</ul>
 
 <style>
-.menu{
-    background-color:black;
+/*Apply to the whole hyperlink bar*/
+.main-navigation a{
+  size:16px;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
-.parent {
-	display: block;
-	position: relative;
-	float: left;
-	line-height: 30px;
-	background-color: #4FA0D8;
-	border-right: #CCC 1px solid;
+/*Make sure the text are 45px apart*/
+.top{
+  padding-left:60px;
+  padding-top:20px;
+  padding-bottom:20px;
 }
 
-.parent a {
-	margin: 10px;
-	color: #FFFFFF;
-	text-decoration: none;
+  .top a{
+    white-space: nowrap;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+  }
+
+.bullet_points{
+  list-style-type:circle;
 }
 
-.parent a:hover{
-    color:orange;
+/*The logo is floating left*/
+.logo{
+  display:inline-block;
 }
 
-.parent:hover>ul {
-	display: block;
-	position: absolute;
-}
-
-.child {
-	display: none;
-}
-
-.child li {
-	background-color: #E4EFF7;
-	line-height: 30px;
-	border-bottom: #CCC 1px solid;
-	border-right: #CCC 1px solid;
-	width: 100%;
-}
-
-.child li a {
-	color: #000000;
-}
-
-.child li a:hover{
-    color:orange;
+/*Icons at the top of the navigation*/
+.icons{
+    text-align:right;
+    margin-right:10px;
+    margin-top:none;
 }
 
 ul {
-	list-style: none;
-	margin: 0;
-	padding: 0px;
-	min-width: 10em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: black;
 }
+
+li a:hover{
+  color:#f6a456;
+}
+
+ul li {
+    display: block;
+    position: relative;
+    float: left;
+    background:black;
+}
+
+
+li ul { display: none; }
+ul li ul a {
+  display: block;
+  text-decoration: none;
+  padding:1em;
+  padding-top:20px;
+  white-space: nowrap;
+  color: #fff;
+}
+
+li:hover > ul {
+  display: block;
+  position: absolute;
+}
+li:hover li { float: none; }
+.main-navigation li ul li { border-top: 0; }
 
 ul ul ul {
-	left: 100%;
-	top: 0;
-	margin-left: 1px;
+  left: 100%;
+  top: 0;
 }
 
-li:hover {
-	background-color: #95B4CA;
-}
+  ul ul ul a{
+    list-style-type:square;
+  }
 
-.parent li:hover {
-	background-color: #F0F0F0;
+ul:before,
+ul:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
+ul:after { clear: both; }
 
-.expand {
-	font-size: 12px;
-	float: right;
-	margin-right: 5px;
-}
 </style>
 
-</body>
-</html>

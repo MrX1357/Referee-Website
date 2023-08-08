@@ -1,0 +1,141 @@
+/*Applied to all pages*/
+h1{
+    size:24px;
+    font-weight:bold;
+    text-align:center;
+    margin-top:20px;
+}
+
+h2{
+    size:20px;
+    font-weight:normal;
+}
+
+p{
+    size:16px;
+    word-spacing:3px;
+}
+
+h1 h2 p{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/*Icons*/
+
+.icons{
+    text-align:right;
+    margin-right:10px;
+    margin-top:none;
+}
+
+/*Different aspects*/
+/*Apply to the whole hyperlink bar*/
+.main-navigation a{
+    size:16px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  /*Make sure the text are 45px apart*/
+  .top{
+    padding-left:80px;
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+  
+    .top a{
+      color: #fff;
+      display: block;
+      text-decoration:none;
+    }
+  
+  /*The logo is floating left*/
+  .logo{
+    display:inline-block;
+  }
+  
+  /*Icons at the top of the navigation*/
+  .icons{
+      text-align:right;
+      margin-right:10px;
+      margin-top:none;
+  }
+  
+  ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background: black;
+      z-index:2;
+  }
+
+  li a:hover{
+    color:#f6a456;
+  }
+  
+  ul li {
+      position: relative;
+      float: left;
+      background:black;
+  }
+
+  ul ul{
+    margin-top:15px;
+  }
+  
+  li ul { display: none; }
+  
+  ul li ul a {
+    display: block;
+    padding:1em;
+    padding-top:20px;
+    white-space: nowrap;
+    color: #fff;
+  }
+
+  ul li ul li ul a{
+    padding-top:10px;
+    list-style-type:circle;
+    display:block;
+  }
+  
+  li:hover > ul {
+    display:inline-block;
+    position: absolute;
+  }
+
+  li:hover li { float: none; }
+  .main-navigation li ul li { border-top: 0; }
+  
+  ul ul ul {
+    left: 100%;
+    top: 0;
+  }
+
+  
+  ul:before,
+  ul:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+  ul:after { clear: both; }
+
+/*Code for changing the arrow's colour*/
+/* Hiding the second picture right away */
+.change_photos .change_photo:nth-of-type(2) {
+    display: none;
+  }
+  
+  /* When you hover your cursor over the parent change_photos class, the first picture is hidden, and the second is shown */
+  
+  .change_photos:hover .change_photo:nth-of-type(1) {
+    display: none;
+  }
+  
+  .change_photos:hover .change_photo:nth-of-type(2) {
+    display: block;
+  }
+  
+  .change_photos:hover {
+    cursor: pointer;
+  }
+
