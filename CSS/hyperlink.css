@@ -16,7 +16,7 @@ p{
     word-spacing:3px;
 }
 
-h1 h2 p{
+h1, h2, li, p{
     font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -37,7 +37,7 @@ h1 h2 p{
   
   /*Make sure the text are 45px apart*/
   .top{
-    padding-left:80px;
+    padding-left:5.5%;
     padding-top:20px;
     padding-bottom:20px;
   }
@@ -87,7 +87,7 @@ h1 h2 p{
   ul li ul a {
     display: block;
     padding:1em;
-    padding-top:20px;
+    padding-top:17.5px;
     white-space: nowrap;
     color: #fff;
   }
@@ -121,6 +121,10 @@ h1 h2 p{
 
 /*Code for changing the arrow's colour*/
 /* Hiding the second picture right away */
+.change_photo{
+  margin-bottom:10px;
+}
+
 .change_photos .change_photo:nth-of-type(2) {
     display: none;
   }
@@ -139,3 +143,81 @@ h1 h2 p{
     cursor: pointer;
   }
 
+/*The collaspible section applied to all pages*/
+.collapsible{
+  background-color:#f0f2f5;
+  border:1px solid black;
+  text-align:left;
+  color:black;
+  cursor:pointer;
+  width:100%;
+  font-size:20px;
+  max-width:15cm;
+}
+
+.collapsible:hover{
+  color:orange;
+}
+
+  .content{
+    display:none;
+  }
+
+  .content li{
+    margin-left:2.5%;
+    margin-top:1.5%;
+  }
+
+/*Telling the user that this component have yet not released*/
+.updates_info{
+  position:relative;
+  display:inline-block;
+  cursor:pointer;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+.updates_info .updates_info_text{
+  visibility:hidden;
+  color:black;
+  z-index:1;
+  top:100%;
+}
+
+.updates_info .updates_into_text::after{
+  content:"";
+  position:absolute;
+}
+
+/*Hide and show*/
+.updates_info .show{
+  visibility:visible;
+  -webkit-animation:fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+  /*Animation*/
+
+  @keyframes fadeIn{
+    from {opacity:0;}
+    to {opacity:1;}
+  }
+
+/*Two horizontal element design*/
+.horizontal_flex{
+  display:flex;
+  flex-direction:column;
+}
+
+.horizontal_flex > div{
+  margin:5%;
+  padding:5%;
+  font-size:12px;
+}
+
+/*Smaller text in the sub-bullet point for the reader to understand*/
+li.small_bullet{
+  font-size:14px;
+}

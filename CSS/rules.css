@@ -25,62 +25,91 @@ p{
     grid-column:1/2;
     border:2px solid black;
     padding-right:0px;
-    margin-right:10px;
-    max-height:4cm;
-    max-width:4cm;
+    width:3cm;
+    height:4cm;
     background-color:#ededed;
 }
 
     .rules_extension h2{
         padding-left:10px;
         text-align:center;
-        max-width:5px;
+        max-width:10px;
     }
 
 /*Introduction text*/
 .rules_intro{
-    margin-left:100px;
+    margin-left:10%;
     grid-row:1/2;
     grid-column:2/3;
     max-width:45cm;
+    margin-bottom:10%;
 }
 
     .rules_intro p{
         /*Restrict the text length*/
-        max-width:10cm;
+        max-width:75%;
         font-family:Arial, Helvetica, sans-serif;
         font-size:16px;
     }
 
     .rules_intro li{
-        max-width:10cm;
+        max-width:15cm;
         font-family:Arial, Helvetica, sans-serif;
-        list-style-position:inside;
-        
+        margin-top:5px;
     }
 
 /*Referee signal if included*/
 .rules_diagram{
     grid-row:1/2;
     grid-column:3/4;
-    height:75px;
+    height:100px;
     width:20px;
     margin-bottom:400px;
     text-align:center;
     padding-left:100px;
 }
 
+    .rules_diagram img{
+        width:1200%;
+        height:250%;
+    }
+
 /*Extra notes explaination*/
 .rules_notes{
     grid-row:2/3;
     grid-column:2/3;
-    margin-left:100px;
+    margin-left:10%;
+    
 }
 
     .rules_notes p{
         color:black;
         font-family:Arial, Helvetica, sans-serif;
-        max-width:12cm;
+        width:75%;
+    }
+
+    .rules_notes h4{
+        width:75%;
+    }
+
+    .rules_notes li{
+        padding-top:3px;
+        width:75%;
+    }
+
+    .rules_notes ol{
+        width:15cm;
+    }
+
+    .rules_notes ul{
+        margin-left:1cm;
+        width:10.5cm;
+        list-style:circle;
+    }
+
+    /*Prevent the conflicts with hyperlink.css*/
+    .clear{
+        background-color:white;
     }
 
 /*Explainatory video*/

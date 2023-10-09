@@ -31,6 +31,15 @@
         max-width:32.5cm;
     }
 
+    .intro a{
+        text-decoration:none;
+        color:black;
+    }
+
+    .intro a:hover{
+        color:#f6a456;
+    }
+
 .tips{
     grid-row:2/3;
     grid-column:2/4;
@@ -40,6 +49,15 @@
 
     .tips p{
         max-width:25cm;
+    }
+
+    .tips a{
+        text-decoration:none;
+        color:black;
+    }
+
+    .tips a:hover{
+        color:#f6a456;
     }
 
 .image{

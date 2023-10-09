@@ -1,5 +1,6 @@
-“A player cannot remain in his opponent’s restricted area
-for more than three seconds”
+A player shall not remain in the opponent’s restricted area for more than 3 consecutive
+seconds while his/her team is in control of a live ball in the frontcourt and the game clock is
+running.
 
 Referees shall have in mind that there
 are allowances when a player who is in
@@ -10,3 +11,9 @@ of shooting
 • Dribbles to shoot for a field goal after
 having been there for less than 3
 consecutive seconds 
+
+Referees need to use voice to prevent the player staying inside the
+restricted area. Before making a 3 second violation call.
+“Blue #6, out of the key”
+Referees are not to call a 3 second violation once a shot attempt
+has been released.

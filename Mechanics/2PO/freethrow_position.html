@@ -1,0 +1,221 @@
+<head>
+    <link rel="stylesheet" href="CSS/hyperlink.css">
+    <link rel="stylesheet" href="CSS/mechanics.css">
+</head>
+
+<body>
+<!--Icons-->
+<div class="icons">
+    <a href="https://www.youtube.com/"><img src="Documents/icons/youTube.png" width="40px" height="40px"></a>
+    <a href="useful_links.html"><img src="Documents/icons/link.png" width="35px" height="30px"></a>
+  </div> 
+  
+  <!--Navigation Bar-->  
+  <ul class="main-navigation">
+      <li class="logo"><a href="#">
+        <img src="Documents/Icons/logo.png" width="120px" height="40px">
+      </a></li>
+  
+      <li class="top"><a href="#">Rules</a>
+        <ul>
+          <li><a href="#">Game Genre >>></a></li>
+          <li><a href="#">Violations >>></a>
+            <ul class="bullet_points">
+              <li><a href="#">Travelling</a></li>
+              <li><a href="#">Double Dribble</a></li>
+              <li><a href="#">Kickball</a></li>
+              <li><a href="#">Carrying</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Fouls >>></a>
+          <li><a href="#">Duty and Power >>></a>
+        </ul>
+      </li>
+  
+      <li class="top"><a href="#">Mechanics</a>
+        <ul>
+          <li><a href="#">Themes</a></li>
+          <li><a href="#">Plugins</a></li>
+          <li><a href="#">Custom Post Types</a>
+            <ul>
+              <li><a href="#">Portfolios</a></li>
+              <li><a href="#">Testimonials</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Options</a></li>
+        </ul>
+      </li>
+  
+      <li class="top"><a href="#">Special Aspects</a></li>
+  
+      <li class="top"><a href="referee_news.html">Referee News</a></li>
+  
+      <li class="top"><a href="referee_interviews.html">Referee Interviews</a></li>
+  
+      <li class="top"><a href="#">Contact Us</a>
+        <ul>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="#">Feedback Form</a>
+        </ul>
+      </li>
+  </ul>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("nav_grid");
+        if (x.className === "grid_container") {
+            x.className += " responsive" ;
+        } else{
+            x.className = "grid_container"
+        }
+    }
+
+    //Code for the clicked dropdown
+    function clicked_dropdown() {
+        document.getElementById("searchbar").classList.toggle("show;")
+    }
+
+    window.onclick = function(event) {
+        if (!event.target.matches(".dropdown_button")) {
+            var dropdowns = document.getElementsByClassName("dropdown_contents")
+            var i
+            for (i=0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains("show")){
+                    openDropdown.classList.remove("show");
+                }
+            }
+        }
+    }
+</script>
+
+<!--Mechanics section-->
+<h1>Free Throw Position</h1>
+
+<div class="mechanics_grid">
+    <div class="expansion">
+        <h2>Mechanics Page</h2>
+        <!--Clicked to expand-->
+        <a href="#">
+            <div class="change_photos">
+                <div class="change_photo">
+                    <img src="Documents/double_arrow1.png" height="25cm" width="40cm" style="padding-left:10px;text-align:center">
+                </div>
+
+                <div class="change_photo">
+                    <img src="Documents/double_arrow2.png" height="25cm" width="40cm" style="padding-left:10px;text-align:center">
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="mechanics_section">
+
+        <div class="text_flex">
+            <div class="text">
+                <img src="Documents/Mechanics/2PO/Freethrow Position/freethrow_1.png">
+            </div>
+            <div class="text">
+                <h2 style="color:blue;text-align:center;">PROCEDURE</h2>
+
+                <p>During free-throws, the Trail and the Lead are to position themselves in the
+                    front court consistent with the general working areas.</p>
+            </div>
+        </div>
+
+        <!--The p tag is the line spreading out-->
+        <div class="spread_line">
+            <p>_________________________________________________________________________________________________________________________________</p>
+        </div>
+
+        <div class="text_flex">
+            <div class="text">
+                <img src="Documents/Mechanics/2PO/Freethrow Position/freethrow_2.png">
+            </div>
+            <div class="text">
+                <p>The Trail's position during the free-throw is generally on the top of the free throw semi
+                    circle line extended, close to the sideline.</p>
+            </div>
+        </div>
+
+        <div class="spread_line">
+            <p>_________________________________________________________________________________________________________________________________</p>
+        </div>
+
+        <div class="text_flex">
+            <div class="text">
+                <img src="Documents/Mechanics/2PO/Freethrow Position/freethrow_3.png">
+            </div>
+            <div class="text">
+                <p>On the first free-throw, the Trail shall pay attention that
+                    the shooter does not commit a violation by stepping over the free-throw line. </p>
+            </div>
+        </div>
+
+        <div class="spread_line">
+            <p>_________________________________________________________________________________________________________________________________</p>
+        </div>
+
+        <div class="text_flex">
+            <div class="text">
+                <img src="Documents/Mechanics/2PO/Freethrow Position/freethrow_4.png">
+            </div>
+            <div class="text">
+                <p>During the second free-throw, the Trail shall pay attention to the shooter but also
+                    to the defensive players behind the free-throw line extended
+                    and behind the 3-point field goal, and those in rebound
+                    places on the right-side of the shooter.
+                </p>
+            </div>
+        </div>
+
+        <div class="spread_line">
+            <p>_________________________________________________________________________________________________________________________________</p>
+        </div>
+
+        <div class="text_flex">
+            <div class="text">
+                <img src="Documents/Mechanics/2PO/Freethrow Position/freethrow_5.png">
+            </div>
+            <div class="text">
+                <p>The Lead shall pay attention to the defensive players in rebound places in the left-side
+                    of the shooter. </p>
+                <p>When a violation occurs during the last or only free-throw, the official is to blow the whistle
+                    without delay to indicate a violation has occurred 
+                    (there is no need to wait if the ball enters the basket or not). 
+                    If the ball enters the basket, the whistle is to be ignored allowing the throw-in to occur 
+                    (without the official administering the ball). </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Arrow to go to the next page-->
+<!--Change the arrow's colour to orange when hover-->
+    <div class="change_photos" style="float:left;">
+        <!--Link to the previous page-->
+        <a href="travelling.html">
+            <div class="change_photo">
+                <img src="../../Documents/Referee Interviews/left_arrow1.png" height="50px;"></img>
+            </div>
+            <div class="change_photo">
+                <img src="../../Documents/Referee Interviews/left_arrow2.png" height="50px"></img>
+            </div>
+        </a>
+    </div>
+
+    <div class="change_photos" style="float:right;">
+        <!--Link to the next page-->
+        <a href="5secs.html">
+            <div class="change_photo">
+                <img src="../../Documents/Referee Interviews/right_arrow1.png" height="50px;"></img>
+            </div>
+
+            <div class="change_photo">
+                <img src="../../Documents/Referee Interviews/right_arrow2.png" height="50px;"></img>
+            </div>
+        </a>
+    </div>
+
+</body>
+</html>

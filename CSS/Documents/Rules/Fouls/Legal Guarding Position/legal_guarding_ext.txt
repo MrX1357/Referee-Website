@@ -1,0 +1,20 @@
+When guarding a player who controls
+the ball, the elements of time and
+distance do NOT apply. That means that
+the player with the ball must expect to
+be guarded and must be prepared to
+stop or change his direction whenever
+an opponent takes an initial legal
+guarding position in front of him. The
+defensive player can move backwards
+or laterally, but not towards the player
+with the ball.
+
+When guarding a player who does not
+control the ball, the elements of time
+and distance shall apply. That means
+that the defensive player cannot take
+a position so near and/or quickly in the
+path of a moving opponent. The distance
+is proportional to the speed, but never
+less than one normal step.

@@ -19,6 +19,7 @@
     grid-column:2/3;
     grid-row:1/2;
     width:50%;
+    margin-left:20%;
 }
 
 .interview_box{
@@ -96,6 +97,8 @@
         text-align:left;
         padding-left:25px;
         padding-right:5px;
+        grid-row:1/2;
+        grid-column:1/2;
     }
 
     .interviews_video{

@@ -6,3 +6,11 @@ catching or dribbling the ball in his
 frontcourt, or
 • The ball is passed between the players
 of that team in its frontcourt.
+
+A team which is in control of a live in its frontcourt may not cause the ball to be illegally returned to its backcourt.
+
+A team in control of a live ball in the frontcourt has illegally returned the ball to its backcourt, if a player of that team is the last touch the ball in his/her frontcourt and the ball is then first touched by a player of that team:
+- Who has part of his/her body in contact with the backcourt
+- After the ball has touched the backcourt of that team.
+
+This restriction applies to all situations in a team's frontcourt, including throw-ins. However, it does not apply to a player who jumps from his/her frontcourt, establishes a new team control while still airborne and then lands with the ball in his/her team's backcourt.

@@ -22,7 +22,7 @@
     margin-right:none;
     background-repeat:no-repeat;
     background-size:cover;
-    background-image:url("Documents/Home/home_news.png")
+    background-image:url(Documents/Home/home_news.png);
 }
 
 .news_sections a{
@@ -178,12 +178,12 @@
 .tournamentsupdate_section_img{
     grid-column:1/5;
     grid-row:3/4;
-    background-image:url(Documents/Home/tournament_update.jpg);
     background-repeat:no-repeat;
     z-index:0;
     opacity:0.10;
     height:auto;
     background-size:cover;
+    background-image:url(Documents/Home/tournament_update.jpg);
 }
 
 .tournamentsupdate_flexbox{
